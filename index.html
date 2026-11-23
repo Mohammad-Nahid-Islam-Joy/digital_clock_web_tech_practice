@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock and Stopwatch</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main class="container">
+
+        <header>
+            <h1>Digital Clock</h1>
+            <p>Live Time and Stopwatch</p>
+        </header>
+
+        <section class="clock-card">
+
+            <div class="clock-top">
+                <h2>Current Time</h2>
+
+                <div>
+                    <button id="format12" class="active">12H</button>
+                    <button id="format24">24H</button>
+                </div>
+            </div>
+
+            <div id="time" class="time-display">
+                00:00:00
+            </div>
+
+            <div id="date" class="date-display">
+                Loading date...
+            </div>
+
+        </section>
+
+        <section class="stopwatch-card">
+
+            <h2>Stopwatch</h2>
+
+            <div id="stopwatch" class="stopwatch-display">
+                00:00:00
+            </div>
+
+            <div class="stopwatch-controls">
+
+                <button id="startBtn" class="start">
+                    Start
+                </button>
+
+                <button id="pauseBtn" class="pause">
+                    Pause
+                </button>
+
+                <button id="resetBtn" class="reset">
+                    Reset
+                </button>
+
+            </div>
+
+            <p id="status">Stopwatch is ready</p>
+
+        </section>
+
+        <footer>
+            <p>Digital Clock and Stopwatch Project</p>
+        </footer>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
